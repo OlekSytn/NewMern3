@@ -1,0 +1,26 @@
+{
+    "name": "book-search",
+    "version": "1.0.0",
+    "description": "A React-based Google Books Search App",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server/server.js",
+        "start:server": "nodemon server/server.js",
+        "start:client": "cd client && yarn start",
+        "dev": "concurrently \"yarn run start:server\" \"yarn run start:client\"",
+        "install": "cd client && yarn",
+        "build": "cd client && npm run build",
+        "heroku-postbuild": "npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "mongodb": "^3.6.3",
+        "mongoose": "^5.11.7",
+        "socket.io": "^3.0.4",
+        "yarn": "^1.22.10"
+    }
+}
